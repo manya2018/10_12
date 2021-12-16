@@ -12,3 +12,5 @@ for i in range(len(A)-1):
  
 print(A)
 
+
+сложность алгоритма - O(n^2)
