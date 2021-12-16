@@ -1,0 +1,20 @@
+from random import randint
+A=[]
+for i in range(10):
+    A.append(randint(1, 100))
+print(A)
+def sort(A):
+    maX=max(A)
+    miN=min(A)
+    B = [0]*(maX-miN+1)
+    for i in range(len(A)):
+        B[i-miN]+=1
+    index=0
+    for i in range(len(B)):
+        for j in range (B[i]):
+            A[index]=i+miN
+            index+=1
+    return A
+print(sort(A))
+
+сложность алгоритма - O(n)
