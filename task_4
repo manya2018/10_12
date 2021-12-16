@@ -1,0 +1,14 @@
+from random import randint
+A=[]
+for i in range(5):
+    A.append(randint(1, 100))
+print(A)
+B=[]
+for i in range(5):
+    B.append(randint(1, 100))
+print(B)
+def sort(A,B):
+    A+=B
+    return sorted(A)
+print(sort(A,B))
+    
